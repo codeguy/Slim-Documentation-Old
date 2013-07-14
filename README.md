@@ -15,7 +15,7 @@ are ready to be merged and deployed.
 
 ## License
 
-Copyright 2013, Josh Lockhart. All rights reserved.
+Copyright 2013, Josh Lockhart and contributors. All rights reserved.
 
 This license applies **only** to the written documentation. The [Slim Framework](http://slimframework.com/) is released
 under a MIT License.
