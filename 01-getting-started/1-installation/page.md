@@ -28,7 +28,7 @@ Add this line to your application's `index.php` file:
 
 ### Manual Install
 
-Download and extract the Slim Framwork into your project directory and `require` it in your application's `index.php`
+Download and extract the Slim Framework into your project directory and `require` it in your application's `index.php`
 file. You'll also need to register Slim's autoloader.
 
     <?php

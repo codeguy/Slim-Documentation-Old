@@ -29,7 +29,7 @@ The **.htaccess** file in the directory structure above contains:
 
 You also need a directory directive to enable **.htaccess** files and allow the **RewriteEngine** directive to be used.
 This is sometimes done globally in the **httpd.conf** file, but its generally a good idea to limit the directive to
-just your virual host by enclosing it in your **VirualHost** configuration block. This is generally setup in your
+just your virtual host by enclosing it in your **VirtualHost** configuration block. This is generally setup in your
 configuration in the form of:
 
     <VirtualHost *:80>

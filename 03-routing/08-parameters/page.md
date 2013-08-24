@@ -9,7 +9,7 @@ route URI, “:one” and “:two”.
     <?php
     $app = new \Slim\Slim();
     $app->get('/books/:one/:two', function ($one, $two) {
-        echo "The first paramter is " . $one;
+        echo "The first parameter is " . $one;
         echo "The second parameter is " . $two;
     });
 

@@ -47,6 +47,6 @@ You can set the log writer similarly in an application hook or route callback li
         $app->getLog()->setWriter(new \MyLogWriter());
     });
 
-If you only need to redirect error output to a different resource handle, use the Slim applicaiton's default log writer;
+If you only need to redirect error output to a different resource handle, use the Slim application's default log writer;
 it writes log messages to a resource handle. All you need to do is set the **slim.errors** environment variable to a
 valid resource handle.
