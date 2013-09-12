@@ -28,6 +28,9 @@ To start a translation:
 **Brazilian Portuguese (In Progress)**<br/>
 <https://github.com/batusa/Slim-Documentation/tree/translation-ptbr>
 
+**German (In Progress)**<br/>
+<https://github.com/MMD-Coding/Slim-Documentation>
+
 **Spanish (In Progress)**<br/>
 <https://github.com/jahvi/Slim-Documentation>
 
