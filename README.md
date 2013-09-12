@@ -11,6 +11,8 @@ are ready to be merged and deployed.
 
 ## Translations
 
+### Get Started
+
 We need translators! Read the instructions below to begin your translation. Please let me know in advance
 if you are interested in creating a translation so that you do not duplicate an existing translation. I will
 list translations here as they become available.
@@ -21,6 +23,11 @@ To start a translation:
 2. Send me your name, language, and GitHub repository fork URL;
 2. Translate your GitHub repository fork;
 3. Send me a message when your translation is complete;
+
+### Current Translations
+
+**Brazilian Portuguese (In Progress)**<br/>
+<https://github.com/batusa/Slim-Documentation/tree/translation-ptbr>
 
 ## Owner
 
