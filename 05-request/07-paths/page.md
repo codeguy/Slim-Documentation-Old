@@ -27,10 +27,10 @@ You can get the HTTP request’s root URI and resource URI with the request obje
 `getRootUri()` and `getResourceUri()` methods:
 
     <?php
-    $app = new Slim();
+    $app = new \Slim\Slim();
 
     // Get request object
-    $req = $app->request();
+    $req = $app->request;
 
     //Get root URI
     $rootUri = $req->getRootUri();

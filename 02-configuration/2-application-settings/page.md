@@ -79,13 +79,16 @@ Default Value
     <strong>Heads Up!</strong> Use the constants defined in `\Slim\Log` instead of integers.
 </div>
 
-Slim has five (5) log message levels:
+Slim has these log levels:
 
-* \Slim\Log::DEBUG
-* \Slim\Log::INFO
-* \Slim\Log::WARN
+* \Slim\Log::EMERGENCY
+* \Slim\Log::ALERT
+* \Slim\Log::CRITICAL
 * \Slim\Log::ERROR
-* \Slim\Log::FATAL
+* \Slim\Log::WARN
+* \Slim\Log::NOTICE
+* \Slim\Log::INFO
+* \Slim\Log::DEBUG
 
 The `log.level` application setting determines which logged messages will be honored and which will be ignored.
 For example, if the `log.level` setting is `\Slim\Log::INFO`, debug messages will be ignored while info, warn,
@@ -174,6 +177,21 @@ Data Type
 Default Value
 : \Slim\View
 
+### cookies.encrypt
+
+Determines if the Slim app should encrypt its HTTP cookies.
+
+    <?php
+    $app = new \Slim\Slim(array(
+        'cookies.encrypt' => true
+    ));
+
+Data Type
+: boolean
+
+Default Value
+: false
+
 ### cookies.lifetime
 
 Determines the lifetime of HTTP cookies created by the Slim application. If this is an integer, it must be a valid
@@ -207,7 +225,7 @@ Determines the default HTTP cookie path if none is specified when invoking the S
     ));
 
     // After instantiation
-    $app->config('cookies.lifetime', '/');
+    $app->config('cookies.path', '/');
 
 Data Type
 : string

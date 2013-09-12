@@ -12,5 +12,5 @@ is an XMLHttpRequest by setting a GET, POST, or PUT parameter in the HTTP reques
 Use the request object's `isAjax()` or `isXhr()` method to ttell if the current request is an XHR/Ajax request:
 
     <?php
-    $isXHR = $app->request()->isAjax();
-    $isXHR = $app->request()->isXhr();
+    $isXHR = $app->request->isAjax();
+    $isXHR = $app->request->isXhr();

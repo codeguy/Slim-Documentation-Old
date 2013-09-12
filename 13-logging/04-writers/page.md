@@ -32,8 +32,7 @@ You may also set a custom log writer with middleware like this:
         public function call()
         {
             //Set the new log writer
-            $log = $this->app->getLog();
-            $log->setWriter(new \MyLogWriter());
+            $$this->app->log->setWriter(new \MyLogWriter());
 
             //Call next middleware
             $this->next->call();
@@ -44,7 +43,7 @@ You can set the log writer similarly in an application hook or route callback li
 
     <?php
     $app->hook('slim.before', function () use ($app) {
-        $app->getLog()->setWriter(new \MyLogWriter());
+        $app->log->setWriter(new \MyLogWriter());
     });
 
 If you only need to redirect error output to a different resource handle, use the Slim applicaiton's default log writer;

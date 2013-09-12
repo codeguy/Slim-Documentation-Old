@@ -10,7 +10,8 @@ your Slim application) without affecting the application as a whole. You can obt
 application’s response object with:
 
     <?php
-    $app->response();
+    $app = new \Slim\Slim();
+    $app->response;
 
 An HTTP response has three primary properties:
 

@@ -7,5 +7,5 @@ Use the request object's `getBody()` method to fetch the raw HTTP request body s
 particularly useful for Slim application's that consume JSON or XML requests.
 
     <?php
-    $request = $app->request();
-    $body = $request->getBody();
+    $app = new \Slim\Slim();
+    $body = $app->request->getBody();

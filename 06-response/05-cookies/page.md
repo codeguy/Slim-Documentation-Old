@@ -30,27 +30,19 @@ additional cookie properties, including its path, domain, secure, and httponly s
 
 ### Set Encrypted Cookie
 
-You may also create encrypted cookies using the Slim application’s `setEncryptedCookie()` method. This method acts
-the same as the Slim application’s `setCookie()` method demonstrated above, but it will encrypt the cookie value
-using the AES–256 cipher and your own secret key. To use encryption, you must define your encryption key when you
-instantiate your Slim application like this:
+You can tell Slim to encrypt the response cookies by setting the app's `cookies.encrypt` setting to `true`.
+When this setting is `true`, Slim will encrypt the response cookies automatically before they are returned to
+the HTTP client.
+
+Here are the available Slim app settings used for cookie encryption:
 
     <?php
     $app = new \Slim\Slim(array(
-        'cookies.secret_key' => 'my_secret_key'
-    ));
-
-If you prefer, you may change the default cipher and cipher mode, too:
-
-    <?php
-    $app = new \Slim\Slim(array(
+        'cookies.encrypt' => true,
         'cookies.secret_key' => 'my_secret_key',
         'cookies.cipher' => MCRYPT_RIJNDAEL_256,
         'cookies.cipher_mode' => MCRYPT_MODE_CBC
     ));
-
-The encrypted cookie value is hashed and later verified to ensure data integrity so that its value is not changed
-while on the HTTP client.
 
 ### Delete Cookie
 

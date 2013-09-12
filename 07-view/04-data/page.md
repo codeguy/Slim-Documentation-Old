@@ -18,15 +18,13 @@ The view object's `setData()` instance method will overwrite existing view data.
 single variable to a given value:
 
     <?php
-    $view = $app->view();
-    $view->setData('color', 'red');
+    $app->view->setData('color', 'red');
 
 The view’s data will now contain a key “color” with value “red”. You may also use the view’s `setData()` method
 to batch assign an entire array of data:
 
     <?php
-    $view = $app->view();
-    $view->setData(array(
+    $app->view->setData(array(
         'color' => 'red',
         'size' => 'medium'
     ));
@@ -39,7 +37,6 @@ The view object also has a `appendData()` method that appends data to the view�
 an array as its one and only argument:
 
     <?php
-    $view = $app->view();
-    $view()->appendData(array(
+    $app->view->appendData(array(
         'foo' => 'bar'
     ));

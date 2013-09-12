@@ -16,7 +16,7 @@ modifying the Slim application’s environment settings. I recommend you use mid
         public function call()
         {
             // Set new error output
-            $env = $this->app->environment();
+            $env = $this->app->environment;
             $env['slim.errors'] = fopen('/path/to/output', 'w');
 
             // Call next middleware

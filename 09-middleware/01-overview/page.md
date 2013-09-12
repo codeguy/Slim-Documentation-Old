@@ -32,13 +32,13 @@ primary Slim application, its environment, its request, and its response:
             $app = $this->app;
 
             //The Environment object
-            $env = $app->environment();
+            $env = $app->environment;
 
             //The Request object
-            $req = $app->request();
+            $req = $app->request;
 
             //The Response object
-            $res = $app->response();
+            $res = $app->response;
         }
     }
 

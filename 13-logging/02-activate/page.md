@@ -7,10 +7,10 @@ The Slim application’s log object provides the following public methods to ena
 
     <?php
     //Enable logging
-    $app->getLog()->setEnabled(true);
+    $app->log->setEnabled(true);
 
     //Disable logging
-    $app->getLog()->setEnabled(false);
+    $app->log->setEnabled(false);
 
 You may enable or disable the log object during application instantiation like this:
 

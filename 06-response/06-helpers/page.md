@@ -17,9 +17,9 @@ an integer; the header is an iterable data structure; and the body is a string. 
      * Prepare new response object
      */
     $res = new \Slim\Http\Response();
-    $res->status(400);
+    $res->setStatus(400);
     $res->write('You made a bad request');
-    $res['Content-Type'] = 'text/plain';
+    $res->headers->set('Content-Type', 'text/plain');
 
     /**
      * Finalize
@@ -37,7 +37,7 @@ The response object’s `redirect()` method will set the response status and its
 return a **3xx Redirect** response.
 
     <?php
-    $app->response()->redirect('/foo', 303);
+    $app->response->redirect('/foo', 303);
 
 ### Status Introspection
 
@@ -45,7 +45,7 @@ The response object provides other helper methods to inspect its current status.
 return a boolean value:
 
     <?php
-    $res = $app->response();
+    $res = $app->response;
 
     //Is this an informational response?
     $res->isInformational();

@@ -22,9 +22,9 @@ This example middleware will capitalize the Slim application's HTTP response bod
             $this->next->call();
 
             // Capitalize response body
-            $res = $app->response();
-            $body = $res->body();
-            $res->body(strtoupper($body));
+            $res = $app->response;
+            $body = $res->getBody();
+            $res->setBody(strtoupper($body));
         }
     }
 

@@ -11,15 +11,18 @@ delegated to a log writer.
 To log data in a Slim application, get a reference to the log object:
 
     <?php
-    $log = $app->getLog();
+    $log = $app->log;
 
-The log object provides the following interface:
+The log object provides the following PSR-3 interface
 
-    $log->debug(mixed $object);
-    $log->info(mixed $object);
-    $log->warn(mixed $object);
-    $log->error(mixed $object);
-    $log->fatal(mixed $object);
+    $app->log->debug(mixed $object);
+    $app->log->info(mixed $object);
+    $app->log->notice(mixed $object);
+    $app->log->warning(mixed $object);
+    $app->log->error(mixed $object);
+    $app->log->critical(mixed $object);
+    $app->log->alert(mixed $object);
+    $app->log->emergency(mixed $object);
 
 Each log object method accepts one mixed argument. The argument is usually a string, but the argument can be
 anything. The log object will pass the argument to its log writer. It is the log writer’s responsibility to write
