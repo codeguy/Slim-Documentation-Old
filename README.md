@@ -5,9 +5,8 @@
 This repository contains the Slim Framework documentation *content*. It is structured
 according to the [Statamic CMS content format](http://statamic.com/learn/core-concepts/pages-and-entries).
 
-Changes to this repository **will not** be deployed on push. The repository owner must manually
-deploy changes when appropriate. Please open a new issue w/ pull request when your documentation changes
-are ready to be merged and deployed.
+Please open a pull request when your documentation changes are ready to be merged. Changes to this repository
+are deployed nightly.
 
 ## Translations
 
