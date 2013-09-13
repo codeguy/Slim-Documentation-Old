@@ -33,6 +33,9 @@ Translate the content of each Markdown file, including the YAML front-matter
 **Brazilian Portuguese (In Progress)**<br/>
 <https://github.com/batusa/Slim-Documentation/tree/translation-ptbr>
 
+**French (In Progress)**<br/>
+<https://github.com/quentin7b/Slim-Documentation>
+
 **German (In Progress)**<br/>
 <https://github.com/MMD-Coding/Slim-Documentation>
 
