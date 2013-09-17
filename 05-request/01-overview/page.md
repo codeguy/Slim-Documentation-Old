@@ -11,4 +11,4 @@ as a whole. You can obtain a reference to the Slim application’s request objec
 
     <?php
     // Returns instance of \Slim\Http\Request
-    $request = $app->request;
+    $request = $app->request();
