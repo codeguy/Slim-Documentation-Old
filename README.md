@@ -39,6 +39,9 @@ Translate the content of each Markdown file, including the YAML front-matter
 **German (In Progress)**<br/>
 <https://github.com/MMD-Coding/Slim-Documentation>
 
+**Italian (In Progress)**<br/>
+<https://github.com/gambledor/Slim-Documentation>
+
 **Spanish (In Progress)**<br/>
 <https://github.com/jahvi/Slim-Documentation>
 
