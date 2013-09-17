@@ -8,4 +8,4 @@ particularly useful for Slim application's that consume JSON or XML requests.
 
     <?php
     $app = new \Slim\Slim();
-    $body = $app->request->getBody();
+    $body = $app->request()->getBody();

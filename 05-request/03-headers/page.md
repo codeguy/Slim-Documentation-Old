@@ -11,10 +11,10 @@ it provides a simple, standardized interface to interactive with the HTTP reques
     $app = new \Slim\Slim();
 
     // Get request headers as associative array
-    $headers = $app->request->headers;
+    $headers = $app->request()->headers;
 
     // Get the ACCEPT_CHARSET header
-    $charset = $app->request->headers->get('ACCEPT_CHARSET');
+    $charset = $app->request()->headers->get('ACCEPT_CHARSET');
 
 The HTTP specification states that HTTP header names may be uppercase, lowercase, or mixed-case. Slim is smart enough
 to parse and return header values whether you request a header value using upper, lower, or mixed case header name,

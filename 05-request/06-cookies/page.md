@@ -18,7 +18,7 @@ object's `getCookie()` method is a convenience. You may also retrieve the comple
 directly from the \Slim\Http\Request object like this:
 
     <?php
-    $cookies = $app->request->cookies;
+    $cookies = $app->request()->cookies();
 
 This will return an instance of \Slim\Helper\Set so you can use its simple, standardized interface to inspect the
 request's cookies.

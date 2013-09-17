@@ -10,52 +10,52 @@ application’s request object:
      * What is the request method?
      * @return string (e.g. GET, POST, PUT, DELETE)
      */
-    $app->request->getMethod();
+    $app->request()->getMethod();
 
     /**
      * Is this a GET request?
      * @return bool
      */
-    $app->request->isGet();
+    $app->request()->isGet();
 
     /**
      * Is this a POST request?
      * @return bool
      */
-    $app->request->isPost();
+    $app->request()->isPost();
 
     /**
      * Is this a PUT request?
      * @return bool
      */
-    $app->request->isPut();
+    $app->request()->isPut();
 
     /**
      * Is this a DELETE request?
      * @return bool
      */
-    $app->request->isDelete();
+    $app->request()->isDelete();
 
     /**
      * Is this a HEAD request?
      * @return bool
      */
-    $app->request->isHead();
+    $app->request()->isHead();
 
     /**
      * Is this a OPTIONS request?
      * @return bool
      */
-    $app->request->isOptions();
+    $app->request()->isOptions();
 
     /**
      * Is this a PATCH request?
      * @return bool
      */
-    $app->request->isPatch();
+    $app->request()->isPatch();
 
     /**
      * Is this a XHR/AJAX request?
      * @return bool
      */
-    $app->request->isAjax();
+    $app->request()->isAjax();
