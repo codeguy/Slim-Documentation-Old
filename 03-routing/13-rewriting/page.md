@@ -77,7 +77,7 @@ good for static files (images, css, js etc), and otherwise forward it on to the 
         server_name  www.mysite.com mysite.com;
         root         /path/www.mysite.com/public_html;
 
-        try_files $uri /index.php;
+        try_files $uri /index.php?$query_string;
 
         # this will only pass index.php to the fastcgi process which is generally safer but
         # assumes the whole site is run via Slim.
