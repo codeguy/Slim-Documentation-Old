@@ -36,7 +36,7 @@ argument will be equal to `array('Josh', 'T', Lockhart')`.
 
 <div class="alert alert-warning">
     <strong>Heads Up!</strong> Optional route segments are experimental. They should only be used
-    in the manor demonstrated below.
+    in the manner demonstrated below.
 </div>
 
 You may also have optional route parameters. These are ideal for using one route for a blog archive. To declare
