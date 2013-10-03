@@ -275,7 +275,7 @@ Default Value
 
 ### cookies.httponly
 
-Determines whether or not cookies are delivered only via the HTTP protocol. You may override this setting when invoking
+Determines whether cookies should be accessible through client side scripts (false = accessible). You may override this setting when invoking
 the Slim application's `setCookie()` or `setEncryptedCookie()` methods.
 
     <?php
