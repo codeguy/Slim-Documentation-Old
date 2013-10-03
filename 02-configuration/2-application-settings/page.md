@@ -334,7 +334,7 @@ Default Value
 
 ### cookies.cipher_mode
 
-The mcrypt cipher mode used for HTTP cookie encryption. See [available cipher modes](http://php.net/manual/en/mcrypt.ciphers.php).
+The mcrypt cipher mode used for HTTP cookie encryption. See [available cipher modes](http://www.php.net/manual/en/mcrypt.constants.php).
 
     <?php
     // During instantiation
