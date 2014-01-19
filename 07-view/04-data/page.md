@@ -6,7 +6,7 @@ status: live
 <div class="alert alert-info">
     <strong>Heads Up!</strong> Rarely will you set or append data directly on the view object. Usually, you
     pass data to the view with the Slim application's `render()` method.
-    See <a href="/pages/view-rendering-templates">Rendering Templates</a>.
+    See <a href="/07-view/02-rendering">Rendering Templates</a>.
 </div>
 
 The view object's `setData()` and `appendData()` methods inject data into the view object; the injected data is
