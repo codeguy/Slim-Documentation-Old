@@ -32,7 +32,7 @@ You may also set a custom log writer with middleware like this:
         public function call()
         {
             //Set the new log writer
-            $$this->app->log->setWriter(new \MyLogWriter());
+            $this->app->log->setWriter(new \MyLogWriter());
 
             //Call next middleware
             $this->next->call();
