@@ -1,5 +1,5 @@
 ---
-title: Logging Overview
+title: Error Handling Overview
 status: live
 ---
 
