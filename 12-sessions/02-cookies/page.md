@@ -34,7 +34,7 @@ this length, you should instead rely on PHP’s native sessions or an alternate 
 
 <div class="alert">
     <strong>PLEASE NOTE:</strong> Client-side storage of session data is not recommended if you are
-    dealing with sensitive information, even when using Slim's encrpyted session cookie middleware.
+    dealing with sensitive information, even when using Slim's encrypted session cookie middleware.
     If you need to store sensitive information, you should encrypt and store the session information
     on your server.
 </div>
