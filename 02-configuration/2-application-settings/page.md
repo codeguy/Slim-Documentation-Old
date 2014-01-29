@@ -275,7 +275,7 @@ Default Value
 
 ### cookies.httponly
 
-Determines whether or not cookies are delivered only via the HTTP protocol. You may override this setting when invoking
+Determines whether cookies should be accessible through client side scripts (false = accessible). You may override this setting when invoking
 the Slim application's `setCookie()` or `setEncryptedCookie()` methods.
 
     <?php
@@ -334,7 +334,7 @@ Default Value
 
 ### cookies.cipher_mode
 
-The mcrypt cipher mode used for HTTP cookie encryption. See [available cipher modes](http://php.net/manual/en/mcrypt.ciphers.php).
+The mcrypt cipher mode used for HTTP cookie encryption. See [available cipher modes](http://www.php.net/manual/en/mcrypt.constants.php).
 
     <?php
     // During instantiation
