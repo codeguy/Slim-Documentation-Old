@@ -27,7 +27,16 @@ methods instead:
     //PUT variable
     $paramValue = $app->request->put('paramName');
 
-If a variable does not exist, each method above will return `null`. You can also invoke any of these functions without
+If a variable does not exist, each method above will return `null`. Each of these methods also accepts a 
+default value as its second parameter:
+
+    <?php
+    $paramValue = $app->request->get('paramName', 'default');
+    $paramValue = $app->request->post('paramName', 'default');
+    $paramValue = $app->request->put('paramName', 'default');
+
+
+You can also invoke any of these functions without
 an argument to obtain an array of all variables of the given type:
 
     <?php
