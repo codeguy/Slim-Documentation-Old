@@ -7,7 +7,7 @@ The response object provides helper methods to inspect and interact with the und
 
 ### Finalize
 
-The response object’s `finalize()` method returns a numeric array of `[status, header, body]`. The status is
+The response object’s `finalize()` method returns an array of `[status, header, body]`. The status is
 an integer; the header is an iterable data structure; and the body is a string. Were you to create a new
 `\Slim\Http\Response` object in your Slim application or its middleware, you would call the response object's
 `finalize()` method to produce the status, header, and body for the underlying HTTP response.
@@ -47,29 +47,29 @@ return a boolean value:
     <?php
     $res = $app->response;
 
-    //Is this an informational response?
+    // Is this an 1xx informational response?
     $res->isInformational();
 
-    //Is this a 200 OK response?
+    // Is this a 200 OK response?
     $res->isOk();
 
-    //Is this a 2xx successful response?
+    // Is this a 2xx successful response?
     $res->isSuccessful();
 
-    //Is this a 3xx redirection response?
+    // Is this a 3xx redirection response?
     $res->isRedirection();
 
-    //Is this a specific redirect response? (301, 302, 303, 307)
+    // Is this a specific redirect response? (301, 302, 303, 307)
     $res->isRedirect();
 
-    //Is this a forbidden response?
+    // Is this a forbidden response?
     $res->isForbidden();
 
-    //Is this a not found response?
+    // Is this a not found response?
     $res->isNotFound();
 
-    //Is this a client error response?
+    // Is this a client error response?
     $res->isClientError();
 
-    //Is this a server error response?
+    // Is this a server error response?
     $res->isServerError();
