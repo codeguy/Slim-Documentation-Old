@@ -7,7 +7,7 @@ The response object provides helper methods to inspect and interact with the und
 
 ### Finalize
 
-The response object’s `finalize()` method returns a numeric array of `[status, header, body]`. The status is
+The response object’s `finalize()` method returns an array of `[status, header, body]`. The status is
 an integer; the header is an iterable data structure; and the body is a string. Were you to create a new
 `\Slim\Http\Response` object in your Slim application or its middleware, you would call the response object's
 `finalize()` method to produce the status, header, and body for the underlying HTTP response.
