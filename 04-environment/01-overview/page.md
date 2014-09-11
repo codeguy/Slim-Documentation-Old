@@ -3,7 +3,7 @@ title: Environment Overview
 status: live
 ---
 
-The Slim Framework implements a derivation of the [Rack protocol](http://rack.rubyforge.org/doc/files/SPEC.html). When
+The Slim Framework implements a derivation of the [Rack protocol](http://rubydoc.info/github/rack/rack/master/file/SPEC). When
 you instantiate a Slim application, it immediately inspects the `$_SERVER` superglobal and derives a set of environment
 variables that dictate application behavior.
 
@@ -23,7 +23,7 @@ the power to - among other things - manipulate environment variables before and/
 ### Environment Variables
 
 The following text respectfully borrows the same information originally available at
-<http://rack.rubyforge.org/doc/files/SPEC.html>. The environment array must include these variables:
+<http://rubydoc.info/github/rack/rack/master/file/SPEC>. The environment array must include these variables:
 
 REQUEST_METHOD
 : The HTTP request method. This is required and may never be an empty string.
