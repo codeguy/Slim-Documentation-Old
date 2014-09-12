@@ -25,6 +25,8 @@ Add this line to your application's `index.php` file:
 
     <?php
     require 'vendor/autoload.php';
+    
+Please note: You will also need to setup routing for the Slim example to work: http://docs.slimframework.com/#Route-URL-Rewriting
 
 ### Manual Install
 
