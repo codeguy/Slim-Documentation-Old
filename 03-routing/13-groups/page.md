@@ -43,3 +43,20 @@ The routes defined above would be accessible at, respectively:
 
 Route groups are very useful to group related routes and avoid repeating common URL segments
 for each route definition.
+
+Parameters contained in the group portion of the route will be passed to the child routes like this:
+ 
+    <?php
+    $app = new \Slim\Slim();
+    
+    // Users group
+    $app->group('/users/:userId', function () use ($app) {
+
+        // User Posts group
+        $app->get('/posts/:postId', function ($userId, $postId) use ($app) {
+            
+            // this route can access both $userId and $postId
+            
+        }
+    }
+
