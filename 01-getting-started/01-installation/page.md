@@ -9,17 +9,9 @@ Install composer in your project:
 
     curl -s https://getcomposer.org/installer | php
 
-Create a `composer.json` file in your project root:
+Add the Slim framework as a dependency:
 
-    {
-        "require": {
-            "slim/slim": "2.*"
-        }
-    }
-
-Install via composer:
-
-    php composer.phar install
+    composer require "slim/slim"
 
 Add this line to your application's `index.php` file:
 
